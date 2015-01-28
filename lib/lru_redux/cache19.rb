@@ -85,6 +85,9 @@ class LruRedux::Cache
     @data.count
   end
 
+  def has_key?(key)
+    @data.has_key?(key)
+  end
 
   # for cache validation only, ensures all is sound
   def valid?
